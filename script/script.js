@@ -1,23 +1,43 @@
 const images = document.querySelectorAll(".unknown");
 const background = document.querySelector(".bg");
-const photo = [
-  "assests/php.png",
-  "assests/c#.png",
-  "assests/c++.png",
-  "assests/java.png",
-  "assests/js.png",
-  "assests/phython.png",
+let photo = [
+  "../assests/php.png",
+  "../assests/java.png",
+  "../assests/js.png",
+  "../assests/php.png",
+  "../assests/java.png",
+  "../assests/js.png",
 ];
 
-images.forEach((image) => {
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
+photo = shuffle(photo);
+
+console.log(photo);
+images.forEach((image, i) => {
   image.addEventListener("click", () => {
     image.classList.toggle("rotate");
     setTimeout(() => {
-      image.classList.toggle("d-none");
-      background.classList.toggle("d-none");
-      background.classList.toggle("rotate2");
-    }, 900);
-
-    // image.src = photo[3];
+      image.src = photo[i];
+      console.log(photo[i-1],i);
+      image.classList.toggle("rotate");
+    }, 800);
   });
 });

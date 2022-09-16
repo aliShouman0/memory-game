@@ -19,10 +19,9 @@ img {
 .container {
   background-color: #ffe9a0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px auto;
+  flex-direction: column; 
+  justify-content: center; 
+  margin: 3rem auto;
   padding: 10px;
   height: auto;
   width: 60vw;
@@ -48,7 +47,7 @@ img {
 .col img {
   border-radius: 20px;
   cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
   max-width: 90%;
   max-height: 90%;
 }
@@ -57,22 +56,7 @@ img {
 .rotate {
   max-width: 60%;
   max-height: 60%;
-  transition: all 1.2s ease-in-out;
+  transition: all 1.5s ease-in-out;
   transform: rotateY(360deg);
 }
-
  
-.rotate2 {
-  max-width: 60%;
-  max-height: 60%;
-  transition: all 2s ease-in-out;
-  transform: rotateY(180deg);
-}
-
-
-.bg{
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 2s ease-in-out;
-  transform: rotateY(180deg);
-} 
