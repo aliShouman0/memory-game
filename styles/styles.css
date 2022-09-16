@@ -1,3 +1,4 @@
+/* css reset */
 * {
   padding: 0;
   margin: 0;
@@ -13,9 +14,6 @@ img {
   height: 100%;
 }
 
-.d-none {
-  display: none;
-}
 .container {
   background-color: #ffe9a0;
   display: flex;
@@ -47,7 +45,7 @@ img {
 .col img {
   border-radius: 20px;
   cursor: pointer;
-  transition: all 1.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   max-width: 90%;
   max-height: 90%;
 }
@@ -55,7 +53,7 @@ img {
 .rotate {
   max-width: 60%;
   max-height: 60%;
-  transition: all 1.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: rotateY(360deg);
 }
 
@@ -63,4 +61,20 @@ img {
   margin: auto;
   font-size: 2vw;
   font-weight: bolder;
+}
+
+.btn {
+  display: block;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.2vw;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #fa7070;
 }
