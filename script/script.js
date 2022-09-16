@@ -8,12 +8,12 @@ let secondImg = -1;
 let score = 0;
 // path of needed img
 let photo = [
-  "../assests/php.png",
-  "../assests/java.png",
-  "../assests/js.png",
-  "../assests/php.png",
-  "../assests/java.png",
-  "../assests/js.png",
+  "../assets/php.png",
+  "../assets/java.png",
+  "../assets/js.png",
+  "../assets/php.png",
+  "../assets/java.png",
+  "../assets/js.png",
 ];
 
 //shuffle photo place
@@ -36,8 +36,8 @@ photo = shuffle(photo);
 const resetImg = () => {
   images[fistImg].classList.toggle("rotate");
   images[secondImg].classList.toggle("rotate");
-  images[fistImg].src = "../assests/unknown.png";
-  images[secondImg].src = "../assests/unknown.png";
+  images[fistImg].src = "../assets/unknown.png";
+  images[secondImg].src = "../assets/unknown.png";
   fistImg = -1;
   secondImg = -1;
 };
