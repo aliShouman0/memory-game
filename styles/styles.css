@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #FA7070;
+  background-color: #fa7070;
 }
 
 img {
@@ -13,6 +13,9 @@ img {
   height: 100%;
 }
 
+.d-none{
+  display: none;
+}
 .container {
   background-color: #ffe9a0;
   display: flex;
@@ -21,7 +24,7 @@ img {
   justify-content: center;
   margin: 10px auto;
   padding: 10px;
-  height: 90vh;
+  height: auto;
   width: 60vw;
   border-radius: 40px;
 }
@@ -36,14 +39,40 @@ img {
 }
 
 .col {
-  width: 40%;
-  height: 90%;
+  width: 40vw;
+  height: 20vh;
   margin: 10px;
-  padding: 10px; 
-
+  padding: 10px;
 }
 
-.col img{
+.col img {
   border-radius: 20px;
   cursor: pointer;
+  transition: all 1s ease-in-out;
+  max-width: 90%;
+  max-height: 90%;
 }
+
+ 
+.rotate {
+  max-width: 60%;
+  max-height: 60%;
+  transition: all 1.2s ease-in-out;
+  transform: rotateY(360deg);
+}
+
+ 
+.rotate2 {
+  max-width: 60%;
+  max-height: 60%;
+  transition: all 2s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+
+.bg{
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+  transform: rotateY(180deg);
+} 
